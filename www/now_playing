@@ -1,0 +1,10 @@
+#!/bin/bash
+
+/usr/bin/expect - << EOX
+spawn nc -U /var/www/music/vlc.sock
+expect ""
+send "title_n\r"
+send "logout\r"
+expect eof
+EOX
+exit 0
