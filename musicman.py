@@ -56,7 +56,7 @@ if __name__ == '__main__':
 		print 'wat? no directory given'
 		exit()
 
-	db = MySQLdb.connect(host="localhost", user="root", passwd="l18w38", db="musicman")
+	db = MySQLdb.connect(host="localhost", user="username", passwd="password", db="musicman")
 	cur = db.cursor() 
 
 	cur.execute("DROP TABLE IF EXISTS music")
