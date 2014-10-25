@@ -165,7 +165,7 @@
 	<br>
 	<select id="artist" name="artist" width="50%" size="14" multiple onchange="artistselect()">
 		<?php
-			$con = new PDO("mysql:host=localhost;dbname=musicman", "root", "l18w38");
+			$con = new PDO("mysql:host=localhost;dbname=musicman", "musicman", "sql");
 
 			// $result = mysql_fetch_all(mysql_query("SELECT DISTINCT artist FROM music ORDER BY artist"));
 			foreach ($con->query("SELECT DISTINCT artist FROM music ORDER BY artist") as $row) {
