@@ -1,5 +1,5 @@
 <?php
-	$con = new PDO("mysql:host=localhost;dbname=musicman", "root", "l18w38");
+	$con = new PDO("mysql:host=localhost;dbname=musicman", "musicman", "sql");
 	if (isset($_POST['queuealbum'])) {
 		$album = $_POST['queuealbum'];
 		$tracklist = array();
